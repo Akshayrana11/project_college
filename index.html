@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Insurance Net Premium Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Life Insurance Net Premium Calculator</h1>
+        <div class="input-container">
+            <label for="type">Type of insurance:</label>
+            <select id="type">
+                <option value="Whole-life">Whole-life</option>
+                <option value="Term">Term</option>
+                <option value="Endowment">Endowment</option>
+            </select>
+            <label for="term">Term of protection (Ignore for whole-life):</label>
+            <input type="number" id="term" min="5" max="30" value="10">
+            <label for="age">Age:</label>
+            <input type="range" id="age" min="1" max="65" value="25">
+            <span id="age-value">25</span>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <label for="sum">Sum assured (in millions of Rupee):</label>
+            <input type="range" id="sum" min="300" max="500" value="500">
+            <span id="sum-value">500</span>
+            <label for="smoke">Smoking status:</label>
+            <input type="radio" id="smoker" name="smoke" value="Smoker">
+            <label for="smoker">Smoker</label>
+            <input type="radio" id="nonsmoker" name="smoke" value="Non-smoker">
+            <label for="nonsmoker">Non-smoker</label>
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="result-container">
+            <h3>Your annual premium would be approximately:</h3>
+            <h4 id="premium" style="color:red"></h4>
+            <h5>Notes:</h5>
+            <ul>
+                <li>This is an example of a very simple insurance product which involves no unit-linked funds or customised payment frequency.</li>
+                <li>This is based on the equivalence principle where the benefits paid is matched to the premiums required, solely dependent on the risk of death and an assumed risk-free rate of 4% per annum.</li>
+                <li>This is a net premium calculator. Hence, it does not take into account the expenses of an insurance company: management fee, commission, transfer fee, etc.</li>
+                <li>It is assumed that smoking increases mortality risk by 30%.</li>
+                <li>The life table used is taken from the Global Health Observatory data repository. Link: <a href="https://apps.who.int/gho/data/view.main.60750?lang=en" target="_blank">https://apps.who.int/gho/data/view.main.60750?lang=en</a></li>
+                <li>The assumptions used will be different the those used in real life. Different companies will have different assumptions.</li>
+                <li>In practice, there will likely be a more complex underwriting process before the premiums can be calculated.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
