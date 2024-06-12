@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Life Insurance Net Premium Calculator</title>
+    <title>Life Insurance Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
     <div class="container">
-        <h1>Life Insurance Net Premium Calculator</h1>
+       
+       <img src="life.jpg" alt="">
+        <h1>Life Insurance Premium Calculator</h1>
+        <h5><a href="#">Developed by Akshay singh and Ayush rana </a></h5>
+        <div class="left">
+          
         <div class="input-container">
+            
             <label for="type">Type of insurance:</label>
             <select id="type">
                 <option value="Whole-life">Whole-life</option>
@@ -36,6 +43,9 @@
             <label for="nonsmoker">Non-smoker</label>
             <button id="calculate">Calculate</button>
         </div>
+    </div>
+        <div class="right">
+            
         <div class="result-container">
             <h3>Your annual premium would be approximately:</h3>
             <h4 id="premium" style="color:red"></h4>
@@ -51,6 +61,7 @@
             </ul>
         </div>
     </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>

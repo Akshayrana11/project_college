@@ -1,12 +1,45 @@
+*{
+  margin: 0;
+  padding: 1vh;
+ 
+}
+.left{
+  width: 50%;
+  float: left;
+  
+}
+.right{
+  width: 50%;
+  float: right;
+  
+  
+}
+img {
+  position: absolute;
+  background-size:cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+
 .container {
-  max-width: 600px;
+  
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  display: inline-block;
+  display: absolute;
+  width: 100%;
 }
 
 .input-container {
   margin-bottom: 20px;
+  width: 40%;
+  position: absolute;
+  opacity: 1;
+ 
+
 }
 
 .input-container label {
@@ -32,6 +65,9 @@
 .result-container {
   border-top: 1px solid #ccc;
   padding-top: 20px;
+width: 50%;
+position: absolute;
+opacity: 1;
 }
 
 .result-container h3,
